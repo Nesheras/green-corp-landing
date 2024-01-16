@@ -20,7 +20,7 @@ class Bubble {
 
     init() {
         this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
-        this.size = Math.random() * (3 - 1) + 1;
+        this.size = Math.random() * (50 - 1) + 1;
         this.alpha = (Math.random() * (10 - 5) + 5) / 10;
         this.translateX = Math.random() * this.canvasWidth;
         this.translateY = Math.random() * this.canvasHeight;
@@ -90,3 +90,5 @@ class CanvasBackground {
 }
 const can = new CanvasBackground("orb-canvas");
 can.start();
+
+

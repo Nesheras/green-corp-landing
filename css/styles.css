@@ -12,11 +12,19 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    background: white;
+    position: fixed;
+    left:  0;
+    right: 0;
+    background: 0;
+    transition: background-color 0.25s ease,
+    box-shadow 0.25s ease;
     top: 0px;
-    z-index: 1;
-}   
+    z-index: 999;
+} 
+.header__scrolled{
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}  
 .logo{
     height: 40px;
 }
@@ -49,7 +57,7 @@ button{
     align-items: center;
     position: relative;
     
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background-image: url("../image/back.png") ;
     background-position: center;
@@ -431,7 +439,7 @@ footer{
     .about{
         flex-wrap: wrap-reverse;
         
-        padding-top: 50px;
+        padding-top: 200px;
         padding-bottom: 50px;
         padding-left:10px ;
         padding-right:10px ;
